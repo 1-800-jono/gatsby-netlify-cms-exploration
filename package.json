@@ -11,6 +11,8 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "gatsby": "next",
     "gatsby-plugin-netlify-cms": "^3.0.0-beta.0",
+    "gatsby-source-filesystem": "^1.5.39",
+    "gatsby-transformer-remark": "^1.7.44",
     "netlify-cms": "^2.0.9",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"

@@ -1,5 +1,5 @@
 {
-  "name": "red-guava-marketing-example",
+  "name": "marketing-example",
   "description": "Marketing site example using Gatsby hello world starter",
   "scripts": {
     "develop": "gatsby develop",

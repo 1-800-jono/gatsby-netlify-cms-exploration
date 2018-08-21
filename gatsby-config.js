@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Red Guava'
+  },
   plugins: [
     `gatsby-plugin-netlify-cms`,
     {

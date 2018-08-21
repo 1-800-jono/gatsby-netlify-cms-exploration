@@ -1,7 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
-  "license": "MIT",
+  "name": "red-guava-marketing-example",
+  "description": "Marketing site example using Gatsby hello world starter",
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",

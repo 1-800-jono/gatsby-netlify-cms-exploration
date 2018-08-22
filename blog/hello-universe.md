@@ -1,10 +1,11 @@
 ---
-path: /blog/hello-universe
+path: /blog/best-practices-patient-appointments
 date: 2018-08-20T22:03:15.303Z
-title: Hello Universe
+tumbnail: /assets/doctor-single-image.jpg
+title: Best Practices for Patient Appointments
 ---
-![Milky Way - thousands of stars with a dark background](/assets/universe.jpg)
+![Group of doctors illustration](/assets/doctors-illustration-1300-899.jpg)
 
-Hello everybody from the current universe and the other ones.
+## Is Not Easy But We Can Help.
 
-When the PR gets merged to the master branch, then Netlify triggers the production deployment. I’ve turned on Slack Notification, so everyone in the team knows when a new production deployment has happened.
+Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus.

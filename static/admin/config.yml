@@ -13,6 +13,7 @@ collections:
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
+      - { name: tumbnail, label: Featured Image, widget: image }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
   - name: pages
@@ -22,6 +23,7 @@ collections:
         label: Home
         name: home
         fields: 
+          - { name: path, label: Path }
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "home-page" }
           - { label: Title, name: title, widget: string }
           - { label: Hero, name: hero, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}]}

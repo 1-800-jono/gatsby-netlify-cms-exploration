@@ -11,7 +11,7 @@
     "emotion-server": "^9.2.6",
     "extract-text-webpack-plugin": "^3.0.2",
     "gatsby": "next",
-    "gatsby-plugin-emotion": "^1.1.17",
+    "gatsby-plugin-emotion": "^2.0.0-rc.0",
     "gatsby-plugin-netlify-cms": "^3.0.0-beta.0",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-source-filesystem": "^1.5.39",

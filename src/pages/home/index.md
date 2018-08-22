@@ -1,6 +1,7 @@
 ---
 path: /
 title: Marketing Website
+date: 2018-08-22T22:03:15.303Z
 hero:
   description: >-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

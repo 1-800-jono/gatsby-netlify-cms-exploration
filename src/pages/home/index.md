@@ -15,7 +15,7 @@ hero:
 imageTextTwoColumn:
   image:
     imageAlt: 'Calculator, pencil and a piece of papaer with calculations'
-    imageUpload: /assets/home-desktop___v3-2.jpg
+    imagePath: /assets/home-desktop___v3-2.jpg
   text: >-
     ## Handle Billing and Accounts
 

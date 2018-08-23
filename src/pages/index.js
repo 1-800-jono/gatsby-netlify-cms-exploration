@@ -12,12 +12,20 @@ export default ({data}) => (
 export const homePageQuery = graphql`
   query HomePage($path: String!){
     markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
       frontmatter {
         templateKey
         title
         hero {
           heading
           description
+        }
+        imageTextTwoColumn {
+          image {
+            imagePath
+            imageAlt
+          }
+          text
         }
       }
     }

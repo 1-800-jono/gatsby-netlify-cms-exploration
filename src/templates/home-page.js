@@ -1,11 +1,16 @@
 import React from 'react';
+import Hero from '../components/features/Hero';
 
-const Home = () => {
+export const Home = props =>  {
+  const { hero } = props.markdownRemark.frontmatter;
   return (
-    <div>
-      This is the home page
-    </div>
+    <section>
+      {console.log(props)}
+      <Hero {...hero }/>
+
+    </section>
   );
 };
+
 
 export default Home;

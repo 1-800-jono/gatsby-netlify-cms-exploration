@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../components/elements/Header';
 import Layout from '../components/layout/Layout';
 
 const About = () => {

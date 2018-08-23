@@ -11,5 +11,8 @@ hero:
     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
     syg ded.
   heading: 'Welcome To Our Marketing Website '
+imageTextTwoColumn:
+  image:
+    imageUpload: ''
 ---
 

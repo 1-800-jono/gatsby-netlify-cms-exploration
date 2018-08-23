@@ -2,9 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout/Layout';
 
-export default function BlogSingle({
-  data, // prop injected by GraphQL query below
-}) {
+const BlogSingle = ({ data }) => {
   const { markdownRemark } = data; //data.markdownRemark holds our post
   const { frontmatter, html } = markdownRemark;
   return (
@@ -20,6 +18,8 @@ export default function BlogSingle({
     </Layout>
   );
 }
+
+export default BlogSingle
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {

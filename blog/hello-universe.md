@@ -1,5 +1,6 @@
 ---
 path: /blog/best-practices-patient-appointments
+templateKey: blog-post
 date: 2018-08-20T22:03:15.303Z
 tumbnail: /assets/doctor-single-image.jpg
 title: Best Practices for Patient Appointments

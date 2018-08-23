@@ -1,5 +1,6 @@
 ---
 path: /blog/how-to-manage-health-practice
+templateKey: blog-post
 date: 2018-08-22T19:41:36.358Z
 tumbnail: /assets/doctor-avatar.jpeg
 title: How To Manage Your Health Practice

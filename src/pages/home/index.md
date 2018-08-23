@@ -1,5 +1,6 @@
 ---
 path: /
+templateKey: home-page
 title: Marketing Website
 hero:
   description: >-

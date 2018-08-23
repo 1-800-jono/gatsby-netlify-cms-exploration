@@ -15,7 +15,7 @@ hero:
 imageTextTwoColumn:
   image:
     imageAlt: 'Calculator, pencil and a piece of papaer with calculations'
-  reverseLayout: true
+  reverseLayout: false
   text: >-
     ## Handle Billing and Accounts
 

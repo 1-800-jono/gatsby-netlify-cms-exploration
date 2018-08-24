@@ -7,7 +7,7 @@ const AboutPageTemplate = ({hero, imageTextTwoColumn}) => {
   return (
     <section>
       <Hero {...hero }/>
-      <ImageTextTwoColumn data={imageTextTwoColumn}/>
+      <ImageTextTwoColumn {...imageTextTwoColumn}/>
     </section>
   );
 };

@@ -1,10 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-
 import Layout from '../components/layout/Layout';
 import AboutPageTemplate from '../components/AboutPageTemplate';
 
 const About = ({data}) => {
+  console.log(data)
   return (
     <Layout>
      <AboutPageTemplate {...data} />

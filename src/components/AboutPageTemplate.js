@@ -1,13 +1,15 @@
 import React from 'react';
-import Hero from '../components/features/Hero';
-import ImageTextTwoColumn from '../components/features/ImageTextTwoColumn';
+import Hero from './features/Hero';
+import ImageTextTwoColumn from './features/ImageTextTwoColumn';
+import TextContent from './features/TextContent';
 
-const AboutPageTemplate = ({hero, imageTextTwoColumn}) => {
+const AboutPageTemplate = ({hero, imageTextTwoColumn, textContent}) => {
   
   return (
     <section>
       <Hero {...hero }/>
       <ImageTextTwoColumn {...imageTextTwoColumn}/>
+      <TextContent {...textContent}/>
     </section>
   );
 };

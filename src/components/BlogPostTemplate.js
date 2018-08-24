@@ -1,4 +1,5 @@
 import React from 'react';
+import { css } from 'react-emotion';
 
 const BlogPostTemplate = ({
   title,
@@ -7,9 +8,9 @@ const BlogPostTemplate = ({
 }) => {
 
   return (
-    <div style={{ background: 'tomato'}}>
+    <div className={css`background: tomato;`}>
       <div>
-        <h1 style={{ color: 'red'}}>{title}</h1>
+        <h1 className={css`color: red;`}>{title}</h1>
         <h2>{date}</h2>
         <div dangerouslySetInnerHTML={{ __html: html }}>
         </div>

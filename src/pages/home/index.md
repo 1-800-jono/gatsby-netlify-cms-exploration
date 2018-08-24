@@ -34,5 +34,17 @@ imageTextTwoColumn:
     **Lorem ipsum dolor sit amet,** consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco.
+gridItems:
+  - itemHeading: Lorem Ipsum
+    itemImage: /assets/spot.jpg
+    itemText: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.'
+  - itemHeading: Exercitation Ullamco
+    itemImage: /assets/ribbon.jpg
+    itemText: |+
+      Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+
+  - itemHeading: Ut enim ad Minim
+    itemImage: /assets/circle.jpg
+    itemText: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
 

@@ -13,10 +13,10 @@ hero:
     syg ded.
   heading: 'Welcome To Our Marketing Website '
 imageTextTwoColumn:
-  reverseLayout: true
   image:
     imageAlt: 'Calculator, pencil and a piece of papaer with calculations'
-    imagePath: '/assets/home-desktop___v3-2.jpg'
+    imagePath: /assets/home-desktop___v3-2.jpg
+  reverseLayout: false
   text: >-
     ## Handle Billing and Accounts
 

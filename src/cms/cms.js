@@ -1,7 +1,7 @@
 
 import CMS from 'netlify-cms';
 
-//import BlogPostPreview from './preview-templates/BlogPostPreview';
+import BlogPostPreview from './preview-templates/BlogPostPreview';
 import HomePreview from './preview-templates/HomePreview';
 
 // class CSSInjector extends React.Component {
@@ -27,5 +27,5 @@ import HomePreview from './preview-templates/HomePreview';
 //     <BlogPostPreview {...props} />
 //   </CSSInjector>
 // ));
-//CMS.registerPreviewTemplate('home', HomePreview);
-//CMS.registerPreviewTemplate('blog', BlogPostPreview);
+CMS.registerPreviewTemplate('home', HomePreview);
+CMS.registerPreviewTemplate('blog', BlogPostPreview);

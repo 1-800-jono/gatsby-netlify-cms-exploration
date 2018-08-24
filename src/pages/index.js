@@ -1,11 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout/Layout';
-import Home from  '../templates/home-page';
+import HomePageTemplate from '../components/HomePageTemplate'
 
 export default ({data}) => (
   <Layout>
-    <Home {...data}/>
+    <HomePageTemplate {...data}/>
   </Layout>
 )
 
@@ -26,7 +26,7 @@ export const homePageQuery = graphql`
             imageAlt
           }
           text
-          
+          reverseLayout
         }
       }
     }

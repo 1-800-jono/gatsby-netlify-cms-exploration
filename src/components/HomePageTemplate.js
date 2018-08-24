@@ -10,7 +10,7 @@ const HomePageTemplate = props => {
       {console.log(props)}
       <Hero {...hero } />
       <ImageTextTwoColumn {...imageTextTwoColumn} />
-      <GridItems {...gridItems} />
+      <GridItems items={gridItems} />
     </section>
   );
 };

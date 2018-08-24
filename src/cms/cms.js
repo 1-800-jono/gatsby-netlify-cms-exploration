@@ -27,5 +27,5 @@ import HomePreview from './preview-templates/HomePreview';
 //     <BlogPostPreview {...props} />
 //   </CSSInjector>
 // ));
-CMS.registerPreviewTemplate('home', HomePreview);
+//CMS.registerPreviewTemplate('home', HomePreview);
 //CMS.registerPreviewTemplate('blog', BlogPostPreview);

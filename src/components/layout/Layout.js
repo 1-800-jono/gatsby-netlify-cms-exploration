@@ -4,7 +4,7 @@ import TopNavigation from '../global/TopNavigation';
 
 const layoutCSS = css`
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1000px;
   padding: 0 1rem;
 `
 

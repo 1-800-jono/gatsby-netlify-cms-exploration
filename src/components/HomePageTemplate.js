@@ -4,13 +4,13 @@ import ImageTextTwoColumn from '../components/features/ImageTextTwoColumn';
 import GridItems from '../components/features/GridItems';
 
 const HomePageTemplate = props => {
-  const { hero, imageTextTwoColumn } = props.markdownRemark.frontmatter;
+  const { hero, imageTextTwoColumn, gridItems } = props.markdownRemark.frontmatter;
   return (
     <section>
       {console.log(props)}
-      <Hero {...hero }/>
-      <ImageTextTwoColumn data={imageTextTwoColumn}/>
-      <GridItems />
+      <Hero {...hero } />
+      <ImageTextTwoColumn {...imageTextTwoColumn} />
+      <GridItems {...gridItems} />
     </section>
   );
 };

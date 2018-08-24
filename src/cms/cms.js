@@ -1,8 +1,8 @@
 
-import CMS from 'netlify-cms';
+// import CMS from 'netlify-cms';
 
-import BlogPostPreview from './preview-templates/BlogPostPreview';
-import HomePreview from './preview-templates/HomePreview';
+// import BlogPostPreview from './preview-templates/BlogPostPreview';
+// import HomePreview from './preview-templates/HomePreview';
 
 // class CSSInjector extends React.Component {
 //   render() {
@@ -27,5 +27,5 @@ import HomePreview from './preview-templates/HomePreview';
 //     <BlogPostPreview {...props} />
 //   </CSSInjector>
 // ));
-CMS.registerPreviewTemplate('home', HomePreview);
-CMS.registerPreviewTemplate('blog', BlogPostPreview);
+// CMS.registerPreviewTemplate('home', HomePreview);
+// CMS.registerPreviewTemplate('blog', BlogPostPreview);

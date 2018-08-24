@@ -1,11 +1,7 @@
-//import React from 'react';
+
 import CMS from 'netlify-cms';
-//import "netlify-cms/dist/cms.css";
 
-import { renderToString } from "react-dom/server"
-import { renderStylesToString } from "emotion-server"
-
-import BlogPostPreview from './preview-templates/BlogPostPreview';
+//import BlogPostPreview from './preview-templates/BlogPostPreview';
 import HomePreview from './preview-templates/HomePreview';
 
 // class CSSInjector extends React.Component {

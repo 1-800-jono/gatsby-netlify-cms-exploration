@@ -3,20 +3,23 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout/Layout';
 import AboutPageTemplate from '../components/AboutPageTemplate';
 
-const About = ({data}) => {
-  console.log(data)
+const AboutPage = ({ data }) => {
+  const { hero, imageTextTwoColumn } = props.markdownRemark.frontmatter;
   return (
     <Layout>
-     <AboutPageTemplate {...data} />
+      <AboutPageTemplate 
+        hero={hero} 
+        imageTextTwoColumn={imageTextTwoColumn} 
+      />
     </Layout>
   );
-};
+}
 
-export default About;
+export default About
 
 export const AboutPageQuery = graphql`
-  query AboutPage($path: String!){
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+  query AboutPage($id: String!){
+    markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         templateKey

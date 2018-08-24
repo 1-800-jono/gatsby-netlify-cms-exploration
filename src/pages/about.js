@@ -1,14 +1,39 @@
 import React from 'react';
-import Header from '../components/elements/Header';
-import Layout from '../components/layout/Layout';
+import { graphql } from 'gatsby';
 
-const About = () => {
+import Layout from '../components/layout/Layout';
+import AboutPageTemplate from '../components/AboutPageTemplate';
+
+const About = ({data}) => {
   return (
     <Layout>
-      <Header headerText="About Page"/>
-      <p>Lorem ipsum dolor sit amet, eum id viris explicari efficiantur, qui iudicabit voluptatum repudiandae id. Ius quod laudem mentitum in. Ut mea wisi torquatos consequuntur, no noluisse intellegebat signiferumque quo, mel brute persequeris ex. Et usu erat labores. Populo consetetur duo ea.</p>
+     <AboutPageTemplate {...data} />
     </Layout>
   );
 };
 
 export default About;
+
+export const AboutPageQuery = graphql`
+  query AboutPage($path: String!){
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        templateKey
+        title
+        hero {
+          heading
+          description
+        }
+        imageTextTwoColumn {
+          image {
+            imagePath
+            imageAlt
+          }
+          text
+          reverseLayout
+        }
+      }
+    }
+  }
+`;

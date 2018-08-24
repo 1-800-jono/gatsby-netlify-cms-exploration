@@ -28,6 +28,11 @@ export const homePageQuery = graphql`
           text
           reverseLayout
         }
+        gridItems {
+          itemImage
+          itemHeading
+          itemText
+        }
       }
     }
   }

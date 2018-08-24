@@ -25,9 +25,9 @@ imageTextTwoColumn:
     sunt in culpa.
 
 
-    ** Et harum quidem** rerum facilis est et expedita distinctio. Nam libero
+    **Et harum quidem** rerum facilis est et expedita distinctio. Nam libero
     tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus
-    id quod maxime placeat facere possimus,.
+    id quod maxime placeat facere possimus.
 
 
     **At vero eos et accusamus** et iusto odio dignissimos ducimus qui
@@ -46,6 +46,7 @@ textContent:
 
 
     It has survived not only five centuries, but also the leap into electronic
-    typesetting, remaining essentially unchanged.
+    typesetting, remaining essentially unchanged. It was popularised in the
+    1960s with the release of Letraset sheets containing Lorem Ipsum passages
 ---
 

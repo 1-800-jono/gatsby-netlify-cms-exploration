@@ -16,7 +16,7 @@ hero:
 imageTextTwoColumn:
   image:
     imageAlt: Illustration of a doctor
-    imagePath: /assets/doctor-avatar.jpeg
+    imagePath: /assets/home-desktop___v3-2.jpg
   reverseLayout: true
   text: >-
     **At vero eos et accusamus** et iusto odio dignissimos ducimus qui

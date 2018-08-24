@@ -4,12 +4,13 @@ import Layout from '../components/layout/Layout';
 import AboutPageTemplate from '../components/AboutPageTemplate';
 
 const AboutPage = ({ data }) => {
-  const { hero, imageTextTwoColumn } = data.markdownRemark.frontmatter;
+  const { hero, imageTextTwoColumn, textContent } = data.markdownRemark.frontmatter;
   return (
     <Layout>
       <AboutPageTemplate 
         hero={hero} 
         imageTextTwoColumn={imageTextTwoColumn} 
+        textContent={textContent}
       />
     </Layout>
   );
@@ -35,6 +36,10 @@ export const AboutPageQuery = graphql`
           }
           text
           reverseLayout
+        }
+        textContent {
+          centerAlign
+          text
         }
       }
     }

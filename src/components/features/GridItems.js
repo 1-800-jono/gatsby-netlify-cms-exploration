@@ -28,6 +28,8 @@ const ListItem = styled('li')`
 `;
 
 const GridItems = props => {
+  console.log(props);
+  
   return (
     <div>
       <h2 className={css`text-align: center;`}>Lorem ipsum dolor sit amet</h2>

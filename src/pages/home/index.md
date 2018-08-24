@@ -16,6 +16,7 @@ imageTextTwoColumn:
   reverseLayout: true
   image:
     imageAlt: 'Calculator, pencil and a piece of papaer with calculations'
+    imagePath: '/assets/home-desktop___v3-2.jpg'
   reverseLayout: true
   text: >-
     ## Handle Billing and Accounts

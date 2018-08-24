@@ -16,7 +16,7 @@ const Children = styled.div`
 `
 
 const ImageTextTwoColumn = props => {
-  const { image, text,  reverseLayout} = props.data;
+  const { image, text,  reverseLayout} = props;
   return (
     <section>
       <Container style={{flexDirection: reverseLayout ? 'row-reverse' : 'row' }}>

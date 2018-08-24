@@ -3,7 +3,6 @@ module.exports = {
     title: 'Marketing Test Site'
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -26,5 +25,15 @@ module.exports = {
       }
     },
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        /**
+         * One convention is to place your Netlify CMS customization code in a
+         * `src/cms` directory.
+         */
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
     ],
 };

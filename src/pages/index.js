@@ -26,7 +26,7 @@ export const homePageQuery = graphql`
             imageAlt
           }
           text
-          reverseLayout
+          
         }
       }
     }

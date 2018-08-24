@@ -15,6 +15,7 @@ const List = styled('ul')`
 `;
 
 const ListItem = styled('li')`
+  text-align: center;
   max-width: 18rem;
   width: 100%;
   justify-content: flex-end;
@@ -28,27 +29,22 @@ const ListItem = styled('li')`
 `;
 
 const GridItems = props => {
-  console.log(props);
-  
+
   return (
     <div>
       <h2 className={css`text-align: center;`}>Lorem ipsum dolor sit amet</h2>
       <List>
-        <ListItem>
-          <img src="https://picsum.photos/200" alt=""/>
-          <h3>Heading</h3>
-          <p>A small descriptive paragraph consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-        </ListItem>
-        <ListItem>
-          <img src="https://picsum.photos/200" alt=""/>
-          <h3>Heading</h3>
-          <p>A small descriptive paragraph  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        </ListItem>
-        <ListItem>
-          <img src="https://picsum.photos/200" alt=""/>
-          <h3>Heading</h3>
-          <p>A small descriptive paragraph ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-        </ListItem>
+      {
+        props.items.map( (item, key) => {
+          return (
+            <ListItem key={key}>
+              <img src={item.itemImage} alt=""/>
+              <h3>{item.itemHeading}</h3>
+              <p>{item.itemText}</p>
+            </ListItem>
+          )
+        })
+      }
       </List>
     </div>
   );

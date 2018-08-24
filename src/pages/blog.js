@@ -18,6 +18,7 @@ const blog = ({ data }) => {
                       margin-right: 1.5em;
                       object-fit: contain;
                       width: 100%;
+                      border-radius: 100%;
                   `}/>
                   <div className={css`max-width: 600px;`}>
                     <h3 className={css`margin-bottom: 0;`}>{node.frontmatter.title}</h3>

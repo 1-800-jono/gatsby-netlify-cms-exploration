@@ -4,7 +4,7 @@ import Layout from '../components/layout/Layout';
 import AboutPageTemplate from '../components/AboutPageTemplate';
 
 const AboutPage = ({ data }) => {
-  const { hero, imageTextTwoColumn } = props.markdownRemark.frontmatter;
+  const { hero, imageTextTwoColumn } = data.markdownRemark.frontmatter;
   return (
     <Layout>
       <AboutPageTemplate 
@@ -15,7 +15,7 @@ const AboutPage = ({ data }) => {
   );
 }
 
-export default About
+export default AboutPage
 
 export const AboutPageQuery = graphql`
   query AboutPage($id: String!){

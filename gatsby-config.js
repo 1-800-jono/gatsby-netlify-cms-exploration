@@ -14,15 +14,15 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/blog/`,
-        name: "blog",
+        name: 'blog',
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/pages/home/`,
-        name: "pages",
-      }
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
     },
     `gatsby-transformer-remark`,
     {

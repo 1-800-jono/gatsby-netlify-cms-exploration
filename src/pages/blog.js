@@ -7,7 +7,7 @@ const blog = ({ data }) => {
   return (
     <Layout>
       <div>
-        <h1>Blog List</h1>
+        <h1>Latest Blog Posts</h1>
         {
           data.allMarkdownRemark.edges.map( ({ node }) => (
             <a href={node.frontmatter.path} key={node.id}>
@@ -19,7 +19,7 @@ const blog = ({ data }) => {
                       object-fit: contain;
                       width: 100%;
                   `}/>
-                  <div>
+                  <div className={css`max-width: 600px;`}>
                     <h3 className={css`margin-bottom: 0;`}>{node.frontmatter.title}</h3>
                     <p className={css`
                         color: #bbb;

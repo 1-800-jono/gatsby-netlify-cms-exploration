@@ -9,7 +9,6 @@ const ListLinkCSS = css`
 
 const TopNavigationWrapper = css`
   margin: 0 auto;
-  max-width: 900px;
   padding: 1.25rem 1rem;
   display: flex;
   justify-content: space-between;

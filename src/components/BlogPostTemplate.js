@@ -8,10 +8,10 @@ const BlogPostTemplate = ({
 }) => {
 
   return (
-    <div className={css`background: tomato;`}>
+    <div>
       <div>
-        <h1 className={css`color: red;`}>{title}</h1>
-        <h2>{date}</h2>
+        <h1 className={css`margin-bottom: 5px;`}>{title}</h1>
+        <h3 className={css`margin-top: 0;`}>{date}</h3>
         <div dangerouslySetInnerHTML={{ __html: html }}>
         </div>
       </div>

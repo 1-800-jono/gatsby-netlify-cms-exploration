@@ -35,14 +35,6 @@ collections:
               {label: Text, name: text, widget: markdown }
             ]
           }
-          - { label: Grid Items, name: gridItems, widget: list, fields: 
-              [
-                { label: Heading, name: heading, widget: string },
-                { label: Item Image, name: itemImage, widget: image },
-                { label: Item Heading, name: itemHeading, widget: text },
-                { label: Item Text, name: itemText, widget: text }
-              ]
-            }
       - file: src/pages/about/index.md
         label: About
         name: about

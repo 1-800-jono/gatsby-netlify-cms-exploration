@@ -1,8 +1,13 @@
+import { renderToString } from "react-dom/server"
+import { renderStylesToString } from "emotion-server"
+import CMS from 'netlify-cms';
 
-// import CMS from 'netlify-cms';
+import BlogPostPreview from './preview-templates/BlogPostPreview';
+//import HomePreview from './preview-templates/HomePreview';
 
-// import BlogPostPreview from './preview-templates/BlogPostPreview';
-// import HomePreview from './preview-templates/HomePreview';
+//////
+// Tried this solution: https://github.com/netlify/netlify-cms/issues/793#issuecomment-371982600
+///
 
 // class CSSInjector extends React.Component {
 //   render() {
@@ -28,4 +33,4 @@
 //   </CSSInjector>
 // ));
 // CMS.registerPreviewTemplate('home', HomePreview);
-// CMS.registerPreviewTemplate('blog', BlogPostPreview);
+CMS.registerPreviewTemplate('blog', BlogPostPreview);

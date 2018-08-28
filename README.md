@@ -1,9 +1,11 @@
-# gatsby-starter-hello-world
+# Example Website using gatsby-starter-hello-world
 Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
+
+## Install modules
 ```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
+npm i
 ```
 
 ## Running in development

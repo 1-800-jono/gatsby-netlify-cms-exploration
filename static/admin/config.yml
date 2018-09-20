@@ -13,24 +13,24 @@ collections:
     fields:
       - { label: Template Key, name: templateKey, widget: hidden, default: blog-post }
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
+      - { name: date, label: Date, widget: date, format: "MMMM DD, YYYY" }
       - { name: tumbnail, label: Featured Image, widget: image }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
   - name: pages
     label: Pages
-    files: 
+    files:
       - file: src/pages/home/index.md
         label: Home
         name: home
-        fields: 
+        fields:
           - { name: path, label: Path }
           - { label: Template Key, name: templateKey, widget: hidden, default: home-page }
           - { label: Title, name: title, widget: string }
           - { label: Hero, name: hero, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}]}
-          - { label: Image and Text Two Column, name: imageTextTwoColumn, widget: object, fields: 
-            [ 
-              {label: Reverse Layout, name: reverseLayout, widget: boolean, default: false }, 
+          - { label: Image and Text Two Column, name: imageTextTwoColumn, widget: object, fields:
+            [
+              {label: Reverse Layout, name: reverseLayout, widget: boolean, default: false },
               {label: Image, name: image, widget: object, fields: [{label: Image Upload, name: imagePath, widget: image}, {label: Image Alt Text, name: imageAlt, widget: string}]},
               {label: Text, name: text, widget: markdown }
             ]
@@ -38,21 +38,21 @@ collections:
       - file: src/pages/about/index.md
         label: About
         name: about
-        fields: 
+        fields:
           - { name: path, label: Path }
           - { label: Template Key, name: templateKey, widget: hidden, default: home-page }
           - { label: Title, name: title, widget: string }
           - { label: Hero, name: hero, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}]}
-          - { label: Image and Text Two Column, name: imageTextTwoColumn, widget: object, fields: 
-              [ 
-                {label: Reverse Layout, name: reverseLayout, widget: boolean, default: false }, 
+          - { label: Image and Text Two Column, name: imageTextTwoColumn, widget: object, fields:
+              [
+                {label: Reverse Layout, name: reverseLayout, widget: boolean, default: false },
                 {label: Image, name: image, widget: object, fields: [{label: Image Upload, name: imagePath, widget: image}, {label: Image Alt Text, name: imageAlt, widget: string}]},
                 {label: Text, name: text, widget: markdown }
               ]
             }
-          - { label: Text Content, name: textContent, widget: object, fields: 
+          - { label: Text Content, name: textContent, widget: object, fields:
             [
-              {label: Center Align Text, name: centerAlign, widget: boolean, default: false }, 
+              {label: Center Align Text, name: centerAlign, widget: boolean, default: false },
               {label: Text, name: text, widget: markdown }
-            ] 
+            ]
           }

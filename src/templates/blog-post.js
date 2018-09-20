@@ -1,26 +1,42 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { css } from 'react-emotion';
 import Layout from '../components/layout/Layout';
-import BlogPostTemplate from '../components/BlogPostTemplate';
+import Content, { HTMLContent } from '../components/elements/Content'
 
-const BlogSingle = ({ data }) => {
-  const { markdownRemark } = data; //data.markdownRemark holds our post
-  const { frontmatter, html } = markdownRemark;
+export const BlogPostTemplate = ({ title, date, content, contentComponent }) => {
+  const PostContent = contentComponent || Content
   return (
-    <Layout>
-      <BlogPostTemplate title={frontmatter.title} date={frontmatter.date} html={html}/>
-    </Layout>
+    <section className={css`background: #fff;`}>
+      <h1 className={css`margin-bottom: 5px;`}>{title}</h1>
+      <h3 className={css`margin-top: 0;`}>{date.toString()}</h3>
+      <PostContent content={content}/>
+    </section>
   );
 }
 
-export default BlogSingle
+const BlogPost = ({data}) => {
+  const { markdownRemark: post } = data
+  return (
+    <Layout>
+      <BlogPostTemplate
+        title={post.frontmatter.title}
+        date={post.frontmatter.date}
+        content={post.html}
+        contentComponent={HTMLContent}
+      />
+    </Layout>
+  )
+}
+
+export default BlogPost
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         path
         title
       }
